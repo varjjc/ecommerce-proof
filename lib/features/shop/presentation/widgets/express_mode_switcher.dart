@@ -11,7 +11,7 @@ class ExpressModeSwitcher extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocBuilder<ExpressModeCubit, bool>(
       builder: (context, isExpress) {
-        // final isAvailable = context.read<ExpressModeCubit>().isExpressAvailable;
+        final isAvailable = context.read<ExpressModeCubit>().isExpressAvailable;
 
         return Row(
           mainAxisSize: MainAxisSize.min,
@@ -19,10 +19,10 @@ class ExpressModeSwitcher extends StatelessWidget {
             const Text('Express'),
             Switch(
               value: isExpress,
-              onChanged: (_) => context.read<ExpressModeCubit>().toggle(),
-              //  isAvailable
-              //     ? (_) => context.read<ExpressModeCubit>().toggle()
-              //     : null,
+              onChanged:  
+               isAvailable
+                  ? (_) => context.read<ExpressModeCubit>().toggle()
+                  : null,
             ),
           ],
         );

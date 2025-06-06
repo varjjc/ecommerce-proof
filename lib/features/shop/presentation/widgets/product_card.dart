@@ -68,9 +68,9 @@ class ProductCard extends StatelessWidget {
                 style: const TextStyle(fontWeight: FontWeight.bold),
               ),
             ),
-            const Padding(
+            Padding(
               padding: EdgeInsets.symmetric(horizontal: 8.0),
-              child: Text("Mililitro a \$3", style: TextStyle(fontSize: 12)),
+              child: Text("Descripción del producto", style: TextStyle(fontSize: 12)),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
