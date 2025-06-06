@@ -11,7 +11,7 @@ Este proyecto es una **prueba técnica** de una aplicación e-commerce desarroll
 - ✅ **Carrito de compras** con posibilidad de aumentar y disminuir productos.
 - ✅ **Modo express** activado con switch global.
   - Carrito independiente.
-  - Botón visual de modo express (azul).
+  - Botón visual de modo express (al lado del carrito).
   - Cambio de comportamiento en la ProductCard.
 - ✅ Visualización de contador de productos en el icono del carrito.
 - ✅ Navegación entre pantallas con GoRouter.
@@ -68,8 +68,11 @@ Gestión de estado:
     flutter run
 
 Notas técnicas
-El modo express se representa con un switcher en la parte superior derecha de la pantalla de productos y cambia la funcionalidad del botón a “Comprar”.
 
-El contador de productos funciona por modo, lo que significa que cada producto puede tener cantidad distinta según el modo (normal o express) y también se diferencia entre el carrito del modo express (contador color azul) y el modo normal (contador color rojo).
+-Todo el flujo Funciona con las categorías "electronics" y "jewelery". Se recomienda probar con estas ya que "Men´s Clothing" y "Women's Clothing" siguen en fase de prueba.
 
-El botón de retroceso usa GoRouter (context.go('/')) para garantizar funcionamiento estable.
+- El modo express se representa con un switcher en la parte superior derecha de la pantalla de productos y cambia la funcionalidad del botón a “Comprar”.
+
+- El contador de productos funciona por modo, lo que significa que cada producto puede tener cantidad distinta según el modo (normal o express) y también se diferencia entre el carrito del modo express (contador color azul) y el modo normal (contador color rojo).
+
+- El botón de retroceso usa GoRouter (context.go('/')) para garantizar funcionamiento estable.
