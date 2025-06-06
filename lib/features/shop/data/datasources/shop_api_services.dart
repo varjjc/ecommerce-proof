@@ -34,7 +34,6 @@ Future<List<ProductModel>> fetchProductsByCategory(String categoryName) async {
 
     return data.map((e) => ProductModel.fromJson(e)).toList();
   } else {
-    print('❌ Error status code: ${response.statusCode}');
     throw Exception('Error al cargar productos');
   }
 }
